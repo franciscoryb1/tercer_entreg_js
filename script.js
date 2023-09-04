@@ -34,7 +34,7 @@ function mostrarFichaUsuario() {
     nombreUsuario.textContent = "Nombre: " + usuario.nombre;
     apellidoUsuario.textContent = "Apellido: " + usuario.apellido;
     edadUsuario.textContent = "Edad: " + usuario.edad;
-    salarioUsuario.textContent = "Salario bruto: $" + usuario.salario.toFixed(2);
+    salarioUsuario.textContent = "Salario basico: $" + usuario.salario.toFixed(2);
     emailUsuario.textContent = "Email: " + usuario.email;
 
     // Calcular retenciones e impuestos
@@ -83,14 +83,12 @@ function manejarEnvioFormulario(event) {
     usuario.antiguedad = parseInt(antiguedadInput.value)
     usuario.email = emailInput.value;
 
-    // Mostrar la ficha de usuario
     mostrarFichaUsuario();
 
-    // Guardar los datos del usuario
     guardarDatosUsuario();
 }
 
-// Manejar el envío del formulario
+
 formulario.addEventListener("submit", manejarEnvioFormulario);
 
 // Cargar los datos del usuario al cargar la página
