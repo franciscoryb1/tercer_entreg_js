@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+#formularioContainer {
+    margin-bottom: 40px;
+}
+
+#fichaUsuarioContainer {
+    display: none;
+}
+
+#fichaUsuario {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#fichaUsuario p {
+    margin: 0;
+}
+
+#fichaUsuario p:last-child {
+    margin-bottom: 0;
+}
+
+#salarioUsuario {
+    font-weight: bold;
+}
+
+#salarioNeto {
+    font-weight: bold;
+}
